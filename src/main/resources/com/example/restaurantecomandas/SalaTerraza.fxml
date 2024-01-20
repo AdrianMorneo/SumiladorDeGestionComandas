@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurantecomandas.ControladorSalaTerraza">
+   <children>
+      <AnchorPane prefHeight="401.0" prefWidth="600.0">
+         <children>
+            <GridPane gridLinesVisible="true" layoutX="69.0" layoutY="102.0" prefHeight="118.0" prefWidth="191.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="S0" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" onAction="#B0S"/>
+                  <Button fx:id="S1" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="1" onAction="#B1S"/>
+                  <Button fx:id="S2" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="2" onAction="#B2S"/>
+                  <Button fx:id="S3" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="3" onAction="#B3S"/>
+                  <Button fx:id="S4" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.rowIndex="1" onAction="#B4S"/>
+                  <Button fx:id="S5" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#B5S"/>
+                  <Button fx:id="S6" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#B6S"/>
+                  <Button fx:id="S7" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="3" GridPane.rowIndex="1" onAction="#B7S"/>
+                  <Button fx:id="S8" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.rowIndex="2" onAction="#B8S"/>
+                  <Button fx:id="S9" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#B9S"/>
+                  <Button fx:id="S10" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#B10S"/>
+                  <Button fx:id="S11" mnemonicParsing="false" prefHeight="54.0" prefWidth="60.0" GridPane.columnIndex="3" GridPane.rowIndex="2" onAction="#B11S"/>
+               </children>
+            </GridPane>
+            <GridPane gridLinesVisible="true" layoutX="393.0" layoutY="102.0" prefHeight="118.0" prefWidth="116.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="T0" mnemonicParsing="false" prefHeight="56.0" prefWidth="77.0" onAction="#B0T"/>
+                  <Button fx:id="T1" mnemonicParsing="false" prefHeight="56.0" prefWidth="77.0" GridPane.columnIndex="1" onAction="#B1T"/>
+                  <Button fx:id="T3" mnemonicParsing="false" prefHeight="56.0" prefWidth="77.0" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#B2T"/>
+                  <Button fx:id="T2" mnemonicParsing="false" prefHeight="56.0" prefWidth="77.0" GridPane.rowIndex="1" onAction="#B3T"/>
+                  <Button fx:id="T5" mnemonicParsing="false" prefHeight="56.0" prefWidth="77.0" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#B4T"/>
+                  <Button fx:id="T4" mnemonicParsing="false" prefHeight="56.0" prefWidth="77.0" GridPane.rowIndex="2" onAction="#B5T"/>
+               </children>
+            </GridPane>
+            <Label layoutX="143.0" layoutY="53.0" text="Sala">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="407.0" layoutY="51.0" text="Terraza">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="STatras" layoutX="453.0" layoutY="299.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="111.0" text="Atrás" onAction="#siguiente1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
